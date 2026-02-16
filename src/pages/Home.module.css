@@ -1,0 +1,702 @@
+﻿/* Home.module.css - Ultra Pro Max Design - 100% TEXT CENTER */
+.homePage {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    /* CONTAINER CENTER */
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background:
+        radial-gradient(circle at 18% 20%, rgba(74, 222, 255, 0.22) 0%, rgba(74, 222, 255, 0) 38%),
+        radial-gradient(circle at 82% 12%, rgba(99, 102, 241, 0.28) 0%, rgba(99, 102, 241, 0) 36%),
+        linear-gradient(135deg, #07101d 0%, #0b1f33 45%, #0f3b5f 100%);
+    color: white;
+    padding: 100px 0 120px;
+    position: relative;
+    text-align: center;
+    /* HERO CENTER */
+    margin-top: 0;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(93, 216, 255, 0.14);
+    color: #9be7ff;
+    padding: 10px 24px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+    border: 1px solid rgba(155, 231, 255, 0.35);
+    backdrop-filter: blur(4px);
+}
+
+.badgeIcon {
+    font-size: 18px;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 48px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+
+.highlight {
+    color: #1f8a8a;
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(96, 165, 250, 0.2);
+    border-radius: 4px;
+    z-index: -1;
+}
+
+/* Stats Section */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 48px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statCard {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 24px 16px;
+    border-radius: 16px;
+    text-align: center;
+    /* STAT CARD CENTER */
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.statCard:hover {
+    transform: translateY(-8px);
+    background: rgba(37, 99, 235, 0.1);
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+.statIcon {
+    font-size: 28px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.statNumber {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f8a8a;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.statLabel {
+    font-size: 14px;
+    color: #c4d1de;
+    display: block;
+}
+
+.description {
+    font-size: 18px;
+    color: #c4d1de;
+    max-width: 800px;
+    margin: 0 auto 48px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* BUTTONS CENTER */
+}
+
+.btnPrimary {
+    background: linear-gradient(135deg, #0b3a66, #072742);
+    color: white;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnPrimary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.4);
+}
+
+.btnOutline {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 16px 36px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnOutline:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-4px);
+}
+
+.wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.wave svg {
+    width: 100%;
+    height: 80px;
+}
+
+/* ===== TRUSTED BRANDS ===== */
+.brands {
+    padding: 40px 0;
+    background: white;
+    border-bottom: 1px solid #d7e0ea;
+}
+
+.brandsText {
+    color: #526277;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.brandsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.brandItem {
+    color: #0d1b2a;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 0;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.brandItem:hover {
+    color: #0b3a66;
+    transform: translateY(-2px);
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+    padding: 100px 0;
+    background: white;
+    text-align: center;
+    /* ABOUT CENTER */
+}
+
+.sectionBadge {
+    display: inline-block;
+    color: #0b3a66;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+    border-bottom: 3px solid #0b3a66;
+    padding-bottom: 8px;
+}
+
+.sectionTitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-align: center;
+    /* TITLE CENTER */
+}
+
+.sectionHighlight {
+    color: #0b3a66;
+}
+
+.aboutContent {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.aboutText {
+    font-size: 18px;
+    color: #4d6074;
+    margin-bottom: 32px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.aboutText strong {
+    color: #0d1b2a;
+}
+
+.aboutFeatures {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.aboutFeature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4d6074;
+    font-size: 16px;
+    padding: 8px 20px;
+    background: #eef3f8;
+    border-radius: 100px;
+}
+
+.btnLink {
+    background: none;
+    border: none;
+    color: #0b3a66;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnLink:hover {
+    gap: 16px;
+    color: #072742;
+}
+
+/* ===== SERVICES SECTION ===== */
+.services {
+    padding: 100px 0;
+    background: #eef3f8;
+    text-align: center;
+    /* SERVICES CENTER */
+}
+
+.sectionSubtitle {
+    font-size: 18px;
+    color: #526277;
+    max-width: 700px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.serviceCard {
+    background: white;
+    padding: 40px 24px;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+    /* SERVICE CARD CENTER */
+    border: 1px solid #d7e0ea;
+    position: relative;
+    overflow: hidden;
+}
+
+.serviceCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0b3a66, #1f8a8a);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.serviceCard:hover::before {
+    transform: scaleX(1);
+}
+
+.serviceCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+
+.serviceIconWrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #0b3a6610, #1f8a8a10);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.serviceIcon {
+    font-size: 40px;
+}
+
+.serviceCard h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #0d1b2a;
+    text-align: center;
+}
+
+.serviceDesc {
+    color: #4d6074;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.serviceFeatures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.serviceFeature {
+    background: #e8eff5;
+    color: #4d6074;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.serviceLink {
+    background: none;
+    border: none;
+    color: #0b3a66;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serviceLink:hover {
+    gap: 12px;
+    color: #072742;
+}
+
+/* ===== WHY CHOOSE US ===== */
+.whyChoose {
+    padding: 100px 0;
+    background: white;
+    text-align: center;
+}
+
+.whyGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 48px;
+}
+
+.whyCard {
+    padding: 40px 24px;
+    background: #eef3f8;
+    border-radius: 20px;
+    text-align: center;
+    /* WHY CARD CENTER */
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.whyCard:hover {
+    background: white;
+    border-color: #0b3a66;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.whyIcon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.whyCard h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.whyCard p {
+    font-size: 15px;
+    color: #4d6074;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ===== CTA SECTION ===== */
+.cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0b3a66 0%, #072742 100%);
+    color: white;
+    text-align: center;
+    /* CTA CENTER */
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="rgba(255,255,255,0.05)" width="100" height="100"/></svg>');
+    opacity: 0.1;
+}
+
+.ctaTitle {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.ctaText {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    text-align: center;
+    position: relative;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* BUTTONS CENTER */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ctaPrimary {
+    background: white;
+    color: #0b3a66;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ctaPrimary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.ctaOutline {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 16px 40px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ctaOutline:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.ctaNote {
+    font-size: 14px;
+    opacity: 0.8;
+    position: relative;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .whyGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0 100px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .sectionTitle {
+        font-size: 32px;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 500px;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .whyGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .brandsGrid {
+        gap: 24px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnPrimary,
+    .btnOutline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .aboutFeatures {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ctaPrimary,
+    .ctaOutline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .ctaTitle {
+        font-size: 32px;
+    }
+
+    .ctaText {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .statNumber {
+        font-size: 32px;
+    }
+
+    .brandsGrid {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .ctaTitle {
+        font-size: 28px;
+    }
+}
+
+
+

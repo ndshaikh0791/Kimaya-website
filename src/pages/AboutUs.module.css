@@ -1,0 +1,693 @@
+﻿/* AboutUs.module.css - 100% TEXT CENTER */
+.aboutPage {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    /* CONTAINER CENTER */
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background:
+        radial-gradient(circle at 18% 20%, rgba(74, 222, 255, 0.22) 0%, rgba(74, 222, 255, 0) 38%),
+        radial-gradient(circle at 82% 12%, rgba(99, 102, 241, 0.28) 0%, rgba(99, 102, 241, 0) 36%),
+        linear-gradient(135deg, #07101d 0%, #0b1f33 45%, #0f3b5f 100%);
+    color: white;
+    padding: 100px 0 120px;
+    position: relative;
+    text-align: center;
+    /* HERO CENTER */
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(93, 216, 255, 0.14);
+    color: #9be7ff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(155, 231, 255, 0.35);
+    backdrop-filter: blur(4px);
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.highlight {
+    color: #1f8a8a;
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #1f8a8a;
+    border-radius: 2px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #c4d1de;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.wave svg {
+    width: 100%;
+    height: 80px;
+}
+
+/* ===== STORY SECTION ===== */
+.story {
+    padding: 80px 0;
+    background: white;
+}
+
+.storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.storyContent {
+    padding-right: 20px;
+    text-align: center;
+    /* STORY CONTENT CENTER */
+}
+
+.sectionBadge {
+    display: inline-block;
+    color: #0b3a66;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+    border-bottom: 3px solid #0b3a66;
+    padding-bottom: 8px;
+}
+
+.sectionTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.storyText p {
+    font-size: 16px;
+    color: #4d6074;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: center;
+    /* PARAGRAPH CENTER */
+}
+
+.storyText strong {
+    color: #0d1b2a;
+}
+
+.quote {
+    margin-top: 40px;
+    padding: 24px 32px;
+    background: linear-gradient(135deg, #eef3f8 0%, #e8eff5 100%);
+    border-radius: 16px;
+    position: relative;
+    border-left: 4px solid #0b3a66;
+    text-align: center;
+    /* QUOTE CENTER */
+}
+
+.quoteIcon {
+    font-size: 48px;
+    color: #0b3a66;
+    opacity: 0.3;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.quote p {
+    font-size: 18px;
+    font-style: italic;
+    color: #0d1b2a;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.quoteAuthor {
+    font-weight: 600;
+    color: #0b3a66;
+    text-align: center;
+}
+
+.storyImage {
+    position: relative;
+}
+
+.imageBox {
+    background: linear-gradient(135deg, #17324d 0%, #0d1b2a 100%);
+    border-radius: 24px;
+    padding: 60px 40px;
+    text-align: center;
+    /* IMAGE BOX CENTER */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.imageBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="rgba(255,255,255,0.05)" width="100" height="100"/></svg>');
+    opacity: 0.1;
+}
+
+.imagePlaceholder span {
+    font-size: 64px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.imagePlaceholder p {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.imagePlaceholder small {
+    color: #8ea0b7;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+.experienceBadge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(37, 99, 235, 0.9);
+    padding: 16px 24px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: left;
+    /* LEFT RAHEGA BECAUSE BADGE POSITION ABSOLUTE */
+}
+
+.expNumber {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.expText {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* ===== STATS SECTION ===== */
+.stats {
+    padding: 60px 0;
+    background: #eef3f8;
+    position: relative;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.statCard {
+    text-align: center;
+    /* STATS CARD CENTER */
+    padding: 32px 24px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.statCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.statNumber {
+    font-size: 48px;
+    font-weight: 800;
+    color: #0b3a66;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 16px;
+    color: #4d6074;
+    font-weight: 500;
+}
+
+.statLine {
+    width: 40px;
+    height: 3px;
+    background: #0b3a66;
+    margin: 16px auto 0;
+    border-radius: 2px;
+}
+
+/* ===== MISSION & VISION ===== */
+.missionVision {
+    padding: 80px 0;
+    background: white;
+}
+
+.mvGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.mvCard {
+    padding: 48px 40px;
+    background: linear-gradient(135deg, #eef3f8 0%, #e8eff5 100%);
+    border-radius: 24px;
+    text-align: center;
+    /* MV CARD CENTER */
+    transition: all 0.3s ease;
+}
+
+.mvCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.mvIcon {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.mvCard h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.mvCard p {
+    font-size: 16px;
+    color: #4d6074;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* ===== VALUES SECTION ===== */
+.values {
+    padding: 80px 0;
+    background: #eef3f8;
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 48px;
+}
+
+.valueCard {
+    background: white;
+    padding: 40px 24px;
+    border-radius: 20px;
+    text-align: center;
+    /* VALUE CARD CENTER */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.valueIcon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.valueCard h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.valueCard p {
+    font-size: 15px;
+    color: #4d6074;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* ===== TEAM SECTION ===== */
+.team {
+    padding: 80px 0;
+    background: white;
+}
+
+.sectionSubtitle {
+    font-size: 18px;
+    color: #526277;
+    max-width: 600px;
+    margin: 0 auto 48px;
+    text-align: center;
+    /* SUBTITLE CENTER */
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.teamCard {
+    text-align: center;
+    /* TEAM CARD CENTER */
+    padding: 32px 24px;
+    background: linear-gradient(135deg, #eef3f8 0%, #ffffff 100%);
+    border-radius: 20px;
+    border: 1px solid #d7e0ea;
+    transition: all 0.3s ease;
+}
+
+.teamCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #0b3a66;
+}
+
+.teamAvatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 24px;
+    background: linear-gradient(135deg, #0b3a66 0%, #072742 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.teamCard h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.teamRole {
+    color: #0b3a66;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.teamExperience {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #e8eff5;
+    color: #4d6074;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ===== CERTIFICATIONS ===== */
+.certifications {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #0a2035 0%, #0b3a66 55%, #1f8a8a 100%);
+    color: white;
+}
+
+.certGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.certItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-align: left;
+    /* LEFT ALIGN - BECAUSE ITEMS HAVE ICONS */
+}
+
+.certItem span {
+    font-size: 32px;
+    color: #4ade80;
+    min-width: 48px;
+    text-align: center;
+}
+
+.certItem strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.certItem small {
+    color: #8ea0b7;
+    font-size: 12px;
+    display: block;
+}
+
+/* ===== CTA SECTION ===== */
+.cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0b3a66 0%, #072742 100%);
+    color: white;
+    text-align: center;
+    /* CTA CENTER */
+}
+
+.cta h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    text-align: center;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* BUTTONS CENTER */
+}
+
+.btnPrimary {
+    background: white;
+    color: #0b3a66;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btnPrimary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.btnOutline {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 16px 40px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btnOutline:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .storyGrid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .valuesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teamGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .certGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0 100px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .sectionTitle {
+        font-size: 28px;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .mvGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .teamGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .certGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnPrimary,
+    .btnOutline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .experienceBadge {
+        position: static;
+        margin-top: 30px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .storyContent {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .statNumber {
+        font-size: 36px;
+    }
+
+    .mvCard {
+        padding: 32px 24px;
+    }
+
+    .mvCard h3 {
+        font-size: 24px;
+    }
+
+    .certGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .certItem {
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+
+
