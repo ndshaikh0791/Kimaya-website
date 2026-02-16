@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local nested project folders
+KIMAYA-WEBSITE/
+Kimaya-Electronics/
